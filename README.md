@@ -23,11 +23,13 @@ API details :
     *ENDPOINT*: `localhost:8080/trip/getTime` <br>
     *REQUEST METHOD*: `POST` <br>
     *BODY*: 
+        
         {
         	"BusRoute":"METRO Blue Line",
         	"BusStopName":"Target Field Station Platform 1",
         	"Direction":"south"
         }
+        
     *APPLICATION TYPE*: `JSON`
     
     *Response*:
@@ -46,9 +48,11 @@ API details :
     *ENDPOINT*: `localhost:8080/file/getDetailFromDirectory` <br>
     *REQUEST METHOD*: `POST` <br>
     *BODY*: 
+        
         {
         	"dir":"/Users/surya/Downloads/"
         }
+        
     *APPLICATION TYPE*: `JSON`
     
     *Response*:
