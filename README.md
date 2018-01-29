@@ -3,8 +3,8 @@
 Application is Designed on Spring Boot (Maven Build) with 2 modules Bus-Stop and File-Manager. 
 
     1. Below are the classes handling core programming logic    
-   [Get Transit Time](https://github.com/suryagup/TargetCaseStudy/blob/master/src/main/java/com/target/api/busstop/process/ProcessData.java)
-   [Get File Details](https://github.com/suryagup/TargetCaseStudy/blob/master/src/main/java/com/target/api/filemanager/process/ProcessDataRequest.java)
+   [Get Transit Time](https://github.com/suryagup/TargetCaseStudy/blob/master/src/main/java/com/target/api/busstop/process/ProcessTransitRequest.java)
+   [Get File Details](https://github.com/suryagup/TargetCaseStudy/blob/master/src/main/java/com/target/api/filemanager/process/ProcessFileRequest.java)
        
     2. Run Application [https://github.com/suryagup/TargetCaseStudy/blob/master/src/main/java/com/target/api/BusStopApplication.java]
     3. JUnits  
