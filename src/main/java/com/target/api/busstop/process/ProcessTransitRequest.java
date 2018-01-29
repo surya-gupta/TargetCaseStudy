@@ -14,9 +14,9 @@ import java.util.Arrays;
 import java.util.Optional;
 
 @Service
-public class ProcessData
+public class ProcessTransitRequest
 {
-    private static final Logger LOG = LoggerFactory.getLogger(ProcessData.class);
+    private static final Logger LOG = LoggerFactory.getLogger(ProcessTransitRequest.class);
     @Autowired
     APICall apiCall;
     public String getNextTripTimeInMinutes(String busRoute, String busStopName, DIRECTION direction)

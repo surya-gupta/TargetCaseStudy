@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Service
-public class ProcessDataRequest
+public class ProcessFileRequest
 {
     public List<FileDetail> getFiles(String directoryName)
     {

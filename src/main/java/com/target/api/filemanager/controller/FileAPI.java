@@ -1,7 +1,7 @@
 package com.target.api.filemanager.controller;
 
 import com.target.api.filemanager.model.FileDetail;
-import com.target.api.filemanager.process.ProcessDataRequest;
+import com.target.api.filemanager.process.ProcessFileRequest;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,7 +17,7 @@ public class FileAPI
 {
     private static final Logger LOG = LoggerFactory.getLogger(FileAPI.class);
     @Autowired
-    private ProcessDataRequest processData;
+    private ProcessFileRequest processData;
     @RequestMapping(value = "/getDetailFromDirectory", method = RequestMethod.POST)
     public @ResponseBody List<FileDetail> getDetailFromDirectory(@RequestBody HashMap<String, Object> request)
     {

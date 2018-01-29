@@ -1,6 +1,6 @@
 package com.target.api.busstop.controller;
 
-import com.target.api.busstop.process.ProcessData;
+import com.target.api.busstop.process.ProcessTransitRequest;
 import com.target.api.busstop.utility.Utility.DIRECTION;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -16,7 +16,7 @@ public class NextTripTime
 {
     private static final Logger LOG = LoggerFactory.getLogger(NextTripTime.class);
     @Autowired
-    private ProcessData processData;
+    private ProcessTransitRequest processTransitRequest;
     @RequestMapping(value = "/getTime", method = RequestMethod.POST)
     public @ResponseBody String getTime(@RequestBody HashMap<String, Object> request)
     {
@@ -28,6 +28,6 @@ public class NextTripTime
        Assert.isTrue(busStopName!=null && !busStopName.isEmpty(),"Bus Stop Name Should not be null or empty!!!");
        Assert.isTrue(direction!=null, "Invalid Direction!!!");
        LOG.info("Data to be processed .... {} , {} , {} ",busRoute,busStopName,direction.getValue());
-       return processData.getNextTripTimeInMinutes(busRoute,busStopName,direction);
+       return processTransitRequest.getNextTripTimeInMinutes(busRoute, busStopName, direction);
     }
 }
