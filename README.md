@@ -67,6 +67,4 @@ API details :
                }]
             
     *Fields*:
-     * **BusRoute** : Bus Route
-     * **BusStopName** : Bus Stop Name
-     * **Direction** : Travel Direction
+     * **dir** : Input Directory for which file details are required.
