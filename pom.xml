@@ -4,12 +4,12 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.target.api</groupId>
-	<artifactId>bus-stop</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<artifactId>TargetCaseStudy</artifactId>
+	<version>1.0.0</version>
 	<packaging>jar</packaging>
 
-	<name>bus-stop</name>
-	<description>Navigational Query for Bus Travel</description>
+	<name>TargetCaseStudy</name>
+	<description>Navigational Query for Bus Travel and File Management API's</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
