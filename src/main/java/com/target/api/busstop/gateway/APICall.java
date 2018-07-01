@@ -29,7 +29,7 @@ public class APICall
             responseEntity = new RestTemplate().exchange(URL, HttpMethod.GET, requestEntity,type);
             if(responseEntity.getStatusCode().equals(HttpStatus.OK))
             {
-                LOG.info("Request Successfull ...");
+                LOG.info("Request Successful ...");
                 return responseEntity.getBody();
             }
             return null;
